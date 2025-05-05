@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>타이어체크 - 타이어 선택하기</title>
+
+   <script src="./js/jquery-3.7.1.min.js"></script>
+   <script src="./js/function.js"></script>
+
+   <link href="./css/common.css" rel="stylesheet" type="text/css">
+   <link href="./css/index.css" rel="stylesheet" type="text/css">
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+   <link rel="stylesheet" type="text/css" href="./Semantic/semantic.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+   <script src="./Semantic/semantic.js"></script>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="wrap">
+      <div class="page-header prev-wrap">
+         <a href="http://haaing.com/sample/tirecheck_sample/main/">
+            <p><i class="arrow left icon"></i>돌아가기</p>
+         </a>
+      </div>
+      <div class="out_box-wrap">
+         <div class="out_box out_box_1">
+         <!-- 사이즈 재는 법 영역 -->
+            <div class="box1-con box1-text-wrap">
+               교체를 희망하는 <u><b>타이어 사이즈</b></u>와
+               <br><u><b>교체 수량</b></u>을 입력해 주세요.
+               <p class="sub-text">
+                  * <span class="color-text">앞 타이어</span>와
+                  <span class="color-text">뒷 타이어</span>의 사이즈가 다를 수 있으니 꼭 <b>확인</b>해주세요.</p>
+            </div>
+            <div class="box1-con box1-img-wrap">
+               <img src="./img/tire_1.png" alt="타이어 사이즈 img">
+            </div>
+         </div>
+         <div class="out_box out_box_2">
+         <!-- 사이즈 체크 영역 -->
+            <div class="select-section section-1">
+               <div class="section-title-wrap">
+                  <div class="section-title">앞 타이어</div>
+                  <select>
+                     <option class="option-a" value="a-1">교체안함</option>
+                     <option>1본</option>
+                     <option>2본</option> 
+                  </select>  
+               </div>
+               <div class="tire-form form-1">
+                  <select id="front-width">
+                     <option class="option-1" value="front-1">단면폭</option>
+                     <option>145</option>
+                     <option>155</option>
+                     <option>165</option>
+                     <option>175</option>
+                     <option>185</option>
+                     <option>195</option>
+                     <option>205</option>
+                     <option>215</option>
+                     <option>225</option>
+                     <option>235</option>
+                     <option>245</option>
+                     <option>255</option>
+                     <option>265</option>
+                     <option>275</option>
+                     <option>285</option>
+                     <option>295</option>
+                     <option>305</option>
+                     <option>315</option>
+                     <option>- 이하 특수사이즈 -</option>
+                     <option>325</option>
+                     <option>335</option>
+                     <option>345</option>
+                     <option>500</option>
+                     <option>550</option>
+                     <option>650</option>
+                  </select>
+                  <select id="front-ratio">
+                     <option class="option-2" value="front-2">편평비</option>
+                     <option>25</option>
+                     <option>30</option>
+                     <option>35</option>
+                     <option>40</option>
+                     <option>45</option>
+                     <option>50</option>
+                     <option>55</option>
+                     <option>60</option>
+                     <option>65</option>
+                     <option>70</option>
+                     <option>75</option>
+                     <option>80</option>
+                     <option>85</option>
+                  </select>
+                  <select id="front-rim">
+                     <option class="option-3" value="front-3">휠사이즈(림경)</option>
+                     <option>12</option>
+                     <option>13</option>
+                     <option>14</option>
+                     <option>15</option>
+                     <option>16</option>
+                     <option>17</option>
+                     <option>18</option>
+                     <option>19</option>
+                     <option>20</option>
+                     <option>21</option>
+                     <option>22</option>
+                     <option>23</option>
+                     <option>24</option>
+                     <option>25</option>
+                     <option>26</option>
+                     <option>27</option>
+                     <option>28</option>
+                     <option>29</option>
+                     <option>30</option>
+                  </select>
+               </div>
+            </div>
+            <div class="select-section section-2">
+               <div class="section-title-wrap">
+                  <div class="section-title">뒷 타이어</div>
+                  <select>
+                     <option class="option-a" value="a-1">교체안함</option>
+                     <option>1본</option>
+                     <option>2본</option> 
+                  </select>  
+               </div>
+               <div class="tire-form form-2">
+                  <select>
+                     <option class="option-1" value="back-1">단면폭</option>
+                     <option>145</option>
+                     <option>155</option>
+                     <option>165</option>
+                     <option>175</option>
+                     <option>185</option>
+                     <option>195</option>
+                     <option>205</option>
+                     <option>215</option>
+                     <option>225</option>
+                     <option>235</option>
+                     <option>245</option>
+                     <option>255</option>
+                     <option>265</option>
+                     <option>275</option>
+                     <option>285</option>
+                     <option>295</option>
+                     <option>305</option> 
+                     <option>315</option>
+                     <option>- 이하 특수사이즈 -</option>
+                     <option>325</option>
+                     <option>335</option>
+                     <option>345</option>
+                     <option>500</option>
+                     <option>550</option>
+                     <option>650</option>     
+                  </select>
+                  <select>
+                     <option class="option-2" value="back-2">편평비</option>
+                     <option>25</option>
+                     <option>30</option>
+                     <option>35</option>
+                     <option>40</option>
+                     <option>45</option>
+                     <option>50</option>
+                     <option>55</option>
+                     <option>60</option>
+                     <option>65</option>
+                     <option>70</option>
+                     <option>75</option>
+                     <option>80</option>
+                     <option>85</option>
+                  </select>
+                  <select>
+                     <option class="option-3" value="back-3">휠사이즈(림경)</option>
+                     <option>12</option>
+                     <option>13</option>
+                     <option>14</option>
+                     <option>15</option>
+                     <option>16</option>
+                     <option>17</option>
+                     <option>18</option>
+                     <option>19</option>
+                     <option>20</option>
+                     <option>21</option>
+                     <option>22</option>
+                     <option>23</option>
+                     <option>24</option>
+                     <option>25</option>
+                     <option>26</option>
+                     <option>27</option>
+                     <option>28</option>
+                     <option>29</option>
+                     <option>30</option>
+                  </select>
+               </div>
+            </div>
+         </div>
+         <div class="out_box out_box_3">
+         <!-- 다음 버튼 영역 -->
+            <button id="next-btn" class="nenxt-but">
+               다음 <i class="arrow right icon"></i>
+            </button>
+         </div>
+      </div>
+      <div class="out_box out_box_4">
+         <!-- Footer 영역 -->
+            <div class="footer-con left-foot">
+               <div class="foot-logo-box">
+                  <img src="./img/tirecheck-logo.svg" alt="">
+               </div>
+               <div class="copy-box">
+                  COPYRIGHT @2025 Tirecheck All rights reserved.
+               </div>
+            </div>
+            <div class="footer-con right-foot">
+               <p>이용약관&nbsp;</p>
+               <p>| <b>개인정보 처리방침</b></p>
+            </div>  
+         </div>
+   </div>
+   <script>
+      document.getElementById('next-btn').addEventListener('click', function () {
+        const width = document.getElementById('front-width').value;
+        const ratio = document.getElementById('front-ratio').value;
+        const rim = document.getElementById('front-rim').value;
+    
+        if (!width || !ratio || !rim || width === 'front-1' || ratio === 'front-2' || rim === 'front-3') {
+          alert("앞 타이어의 사이즈를 모두 선택해주세요.");
+          return;
+        }
+    
+        const tireSize = `${width}/${ratio}R${rim}`;
+        localStorage.setItem('tire', tireSize);
+    
+        // 지역 선택 페이지로 이동
+        location.href = "../select-region/index.html";
+      });
+    </script>
+    
+</body>
+</html>
+

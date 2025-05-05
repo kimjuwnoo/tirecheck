@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>타이어체크 - 결과 매장 리스트</title>
+  <link href="../main/css/common.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .header h2 {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }
+    .header p {
+      color: #555;
+      font-size: 0.95em;
+    }
+    .shop-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .shop-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .shop-title {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 5px;
+      color: #222;
+    }
+    .shop-info {
+      font-size: 0.9em;
+      color: #666;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+    .contact-btn {
+      background: #111;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-size: 0.9em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2>📍 고객님 근처 매장을 찾았어요!</h2>
+    <p id="summary-text">선택한 지역과 타이어 정보</p>
+  </div>
+
+  <div class="shop-list">
+    <div class="shop-card">
+      <div class="shop-title">부산진구 타이어명가</div>
+      <div class="shop-info">
+        📍 부산 부산진구 서면로 123<br>
+        🔧 245/40R18 중고타이어 2본 보유<br>
+        ⏱️ 도보 3분 거리
+      </div>
+      <button class="contact-btn" onclick="location.href='tel:0511234567'">전화 문의</button>
+    </div>
+
+    <div class="shop-card">
+      <div class="shop-title">부산타이어 센터</div>
+      <div class="shop-info">
+        📍 부산 동래구 온천천로 45<br>
+        🔧 245/40R18 80% 이상 A급 보유<br>
+        🚗 차량 이동 10분
+      </div>
+      <button class="contact-btn" onclick="location.href='tel:0517654321'">전화 문의</button>
+    </div>
+    
+    <!-- 추가 매장은 JSON이나 DB에서 로드 가능 -->
+  </div>
+
+  <script>
+    // 선택 정보 불러오기
+    const tire = localStorage.getItem('tire') || '245/40R18';
+    const region = localStorage.getItem('region') || '부산 부산진구';
+
+    document.getElementById('summary-text').textContent = `선택한 지역: ${region} / 타이어: ${tire}`;
+  </script>
+</body>
+</html>

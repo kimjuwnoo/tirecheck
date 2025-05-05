@@ -1,0 +1,651 @@
+.wrap{
+   width: 100%;
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+.main-header{
+   width: 100%;
+   height: 65px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px 10px;
+   box-sizing: border-box;
+}
+
+.main-logo{
+   width: 80px;
+   height: 20px;
+   margin: 0;
+}
+
+.main-logo img{
+   display: block;
+   object-fit: contain;
+}
+
+.main-menu{
+   width: 230px;
+   height: 25px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.top_menu a{
+   display: block;
+   color: #424242;
+}
+
+.top_menu a:hover{
+   color: #424242;
+}
+
+.login-box a,.login-box a:hover{
+   color: #ffffff;
+}
+
+.login-box{
+   width: 80px;
+   height: 25px;
+   background-color: #81C784;
+   border-radius: 5px;
+   text-align: center;
+   align-content: center;
+   color: #f5f5f5;
+   font-size: 0.9rem;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+}
+
+
+/* ----------------------------------- */
+/* 메인 영역 */
+
+.main-section{
+   width: 100%;
+   /* height: 1950px; */
+   margin: 0 auto;
+   position: relative;
+}
+
+.out_box{
+   margin-bottom: 40px;
+}
+
+/* ----------------------------------- */
+/* 첫번째 페이지 - 배너 */
+
+.out_box_1 {
+   height: 450px;
+   position: relative;
+}
+
+.bannerSwiper{
+/* swiper */
+   width: 100%;
+   height: 100%;
+   position: relative;
+}
+
+.swiper-slide{
+   position: relative;
+}
+
+#bannerImg,#bannerImg-2{
+   display: bloc;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 1;
+}
+
+.banner-text-wrap{
+   width: 400px;
+   height: 230px;
+   background-color: rgba(66, 66, 66, 0.45);
+   position: absolute;
+   top: calc(50% - 115px);
+   left: 0px;
+   z-index: 2;
+   padding-left: 50px;
+   box-sizing: border-box;
+   align-content: center;
+}
+
+.banner-text{
+   width: 270px;
+   color: #f5f5f5;
+}
+
+.b_small-text{
+   font-size: 1rem;
+}
+
+.b_big-text{
+   font-size: 1.5rem;
+   font-weight: 600;
+}
+
+#bannertextimg-1{
+   width: 270px;
+   height: 78px;
+   object-fit: contain;
+}
+
+.banner-but{
+   width: 150px;
+   height: 50px;
+   border-radius: 25px;
+   background-color: #5d9260;
+   color: #f5f5f5;
+   font-size: 1.2rem;
+   font-weight: 600;
+   border-style: none;
+   cursor: pointer;
+}
+
+.banner-but a,.banner-but a:hover{
+   color: #f5f5f5;
+}
+
+.swiper-pagination-bullet{
+   background: #f5f5f5 !important;
+   width: 13px !important;
+   height: 13px !important;
+}
+
+/*  */
+.today-box{
+   width: 100%;
+   height: 50px;
+   text-align: center;
+   font-size: 1.2rem;
+}
+
+
+/* ----------------------------------- */
+/* 두번째 페이지 - 타이어 찾기, 사이즈 보는 법 */
+
+.out_box_2{
+   height: 230px;
+   background-color: rgba(232, 232, 232, 0.858);
+   display: flex;
+   flex-wrap: wrap;
+   border-radius: 15px;
+   padding: 10px;
+   box-sizing: border-box;
+}
+
+.box2-con-wrap{
+   width: 100%;
+   height: 250px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.con-title{
+   height: 30px;
+   font-size: 1.3rem;
+   margin-bottom: 5px;
+}
+
+.small-title{
+   font-size: 1rem;
+}
+
+.search-wrap{
+   width: 100%;
+   height: 200px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.search-con{
+   height: 170px;
+}
+
+.search-select_box{
+   width: calc(100% - 10px);
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   gap: 5px;
+   margin-right: 10px;
+}
+
+.search-select_box input{
+   border-style: none;
+   border: 1px solid rgba(66, 66, 66, 0.2);
+}
+
+.search-select_box select{
+   width: 100%;
+   height: 45px;
+   border-radius: 7px;
+   border: 1px solid rgba(66, 66, 66, 0.2);
+   padding: 0 10px;
+   box-sizing: border-box;
+   font-size: 1rem;
+   background-color: #ffffff;
+}
+
+.search-but_box{
+   width: 100px;
+   align-content: center;
+   justify-items: center;
+}
+
+.search-but_box img{
+   width: 60px;
+   height: 60px;
+   object-fit: contain;
+}
+
+.search_but{
+   margin-top: 10px;
+   width: 70px;
+   height: 65px;
+   border-radius: 6px;
+   border-style: none;
+   cursor: pointer;
+   background-color: #81C784;
+   color: #f5f5f5;
+   font-size: 1.2rem;
+   box-shadow: 2px 2px 2px #5d9260;
+   border: 1px solid #424242;
+}
+
+.search_but a,.search_but a:hover{
+   color: #f5f5f5;
+}
+
+.top_con {
+   margin-bottom: 10px;
+}
+
+/*  */
+
+.size-check-wrap{
+   width: 100%;
+   height: 170px;
+   display: flex;
+   justify-content: space-between;
+
+}
+
+.size-img-box{
+   width: 50%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #baf8bd86;
+   box-shadow: 2px 2px 3px #6db571ba;
+   border-radius: 13px;
+}
+
+.img-box-1{
+   margin-right: 20px;
+}
+
+.size-img-box img{
+   display: block;
+   width: 150px;
+   height: 150px;
+   object-fit: contain;
+}
+
+
+
+/* ----------------------------------- */
+/* 세번째 페이지 - 추천 매장 보기 */
+
+.out_box_3{
+   width: 100%;
+   height: 285px;
+   position: relative;  
+   overflow: hidden;
+}
+
+#box3Title{
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   z-index: 4;
+   padding: 0 10px;
+   box-sizing: border-box;
+}
+
+.move_box{
+   width: 200%;
+   height: 285px;
+   display: flex;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 3;
+   transition-duration: 0.5s;
+}
+
+.box3_page{
+   width: 100%;
+   height: 100%;
+   padding: 0 10px;
+   box-sizing: border-box;
+   display: flex;
+   align-items: end;
+}
+
+.page_1{
+   justify-content: start;
+}
+
+.box3_con_wrap{
+   width: 220px;
+   height: 230px;
+   background-color: #81C784;
+   border-radius: 13px;
+   padding: 10px;
+   box-sizing: border-box;
+}
+
+.box3_c_wrap_2,.box3_c_wrap_5{
+   margin: 0 20px;
+}
+
+.page_2{
+   justify-content: end;
+}
+
+.box3_con_box{
+   width: 100%;
+   height: 100%;
+   cursor: pointer;
+}
+
+.box3_img{
+   width: 100%;
+   height: 170px;
+   margin-bottom: 10px;
+}
+
+.box3_img img{
+   border-radius: 8px;
+}
+
+.box3_text_wrap{
+   width: 100%;
+   height: 30px;
+   display: flex;
+}
+
+.box3_text{
+   height: 30px;
+   line-height: 30px;
+   display: block;
+   background-color: #ffffffe7;
+   padding: 0 5px;
+   box-sizing: border-box;
+   font-size: 0.85rem;
+}
+
+.left_text{
+   width: 75%;
+   border-radius: 7px 0 0 7px;
+   text-align: start;
+}
+
+.right_text{
+   width: 25%;
+   border-radius: 0 7px 7px 0;
+   text-align: end;
+}
+
+.heart.icon{
+   color: hotpink;
+}
+
+.box3_but{
+   position: absolute;
+   z-index: 5;
+   top: 58%;
+   width: 30px;
+   height: 30px;
+   line-height: 30px;
+   text-align: center;
+   transform: translateY(-50%);
+   cursor: pointer;
+   font-size: 24px;
+   user-select: none;
+   transition-duration: 1s;
+   border-radius: 50%;
+}
+
+.box3_but img{
+   object-fit: contain;
+}
+
+.box3_left_but{
+   left: 10px;
+}
+
+.box3_right_but{
+   right: 10px;
+}
+
+/* ----------------------------------- */
+/* 네번째 페이지 - 파트너스 */
+
+.out_box_4{
+   width: 100%;
+   height: 230px;
+   padding: 0 10px;
+   box-sizing: border-box;
+   background-color: rgba(232, 232, 232, 0.858);
+}
+
+.partner_wrap{
+   width: 100%;
+   height: 50%;
+}
+
+.partner_text_wrap{
+   width: 100%;
+   height: 50%;
+   padding-top: 40px;
+   box-sizing: border-box;
+   align-content: center;
+   text-align: center;
+}
+
+.partner_text{
+   font-size: 1.2rem;
+}
+
+.text-1{
+   margin-bottom: 5px;
+}
+
+.text-1 img{
+   width: 110px;
+   height: 26px;
+   object-fit: contain;
+   margin-right: 3px;
+}
+
+.partner_bot_wrap{
+   width: 100%;
+   text-align: center;
+   justify-items: center;
+   padding-bottom: 40px;
+   box-sizing: border-box;
+}
+
+.partner_con{
+   margin: 0 auto;
+   width: 120px;
+   align-content: center;
+   border: 1px solid #c1c1c1;
+   cursor: pointer;
+}
+
+.con-1{
+   height: 65%;
+   color: #f5f5f5;
+   font-size: 1.3rem;
+   font-weight: 600;
+   letter-spacing: 3px;
+   background-color: #4CAF50;
+   border-bottom: none;
+}
+
+.con-2{
+   height: 35%;
+   font-size: 0.9rem;
+   background-color: #ffffff;
+   border-top: none;
+}
+
+
+
+
+
+/* ----------------------------------- */
+/* 다섯번째 페이지 - 자가진단 */
+
+.out_box_5{
+   margin: 40px 0;
+   height: 250px;
+   padding: 0 10px;
+   box-sizing: border-box;
+}
+
+#box5-Title{
+   width: 100%;
+   height: 30px;
+   margin-bottom: 25px;
+}
+
+.box5-bigtitle{
+   font-size: 1.5rem;
+}
+
+.box5-con-wrap{
+   margin-top: 50px;
+   width: 100%;
+   height: 150px;
+   display: flex;
+
+}
+
+.box5-con{
+   width: 50%;
+   height: 100%;
+   border-radius: 13px;
+   background-color: #81C784;
+   align-content: center;
+   justify-items: center;
+   text-align: center;
+   color: #f5f5f5;
+   font-size: 1.1rem;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+.box5-left{
+   margin-right: 20px;
+}
+
+.box5-con img{
+   object-fit: contain;
+}
+
+#box5img1{
+   width: 95px;
+   height: 80px;
+   margin-bottom: 3px;
+}
+
+
+#box5img2{
+   width: 95px;
+   height: 80px;
+}
+
+
+
+
+
+
+/* ----------------------------------- */
+/* Footer */
+
+.main-footer{
+   width: 100%;
+   height: 250px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.footer-text{
+   width: 100%;
+   height: 100%;
+   font-size: 12px;
+   padding: 20px 10px 0 10px;
+   box-sizing: border-box;
+}
+
+.footer-text img{
+   width: 125px;
+   height: 30px;
+   object-fit: cover;
+   margin-bottom: 5px;
+}
+
+#rule{
+   margin-top: -5px;
+   cursor: pointer;
+}
+
+
+/* ----------------------------------- */
+/* 하단 Tab 메뉴 */
+
+.main-tabmenu{
+   width: 100%;
+   height: 65px;
+   display: flex;
+   justify-content: space-between;
+   position: sticky;
+   bottom: 0;
+   z-index: 999;
+   background-color: #f5f5f5;;
+}
+
+.tab-but{
+   width: calc(100% / 3);
+   text-align: center;
+   height: 65px;
+   line-height: 65px;
+   font-size: 1.3rem;
+   color: #f5f5f5;
+   background-color: #81C784;
+   cursor: pointer;
+   border: 1px solid #424242;
+}
+
+.tab-but a,.tab-but a:hover{
+   color: #f5f5f5;
+}
+
+.tab-but.active{
+   background-color: #4cAf50;
+}
+
+.tab_2{
+   margin: 0 1px;
+}
