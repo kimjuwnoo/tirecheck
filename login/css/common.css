@@ -23,3 +23,8 @@ img{
 ul,li{
   list-style: none;
 }
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #fff;
+  margin: 0;
+}
