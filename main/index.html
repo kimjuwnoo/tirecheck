@@ -1,100 +1,310 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>타이어체크 - 로그인페이지</title>
-   
-   <script src="./js/jquery-3.7.1.min.js"></script>
-   <script src="./js/function.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>타이어체크 - 메인페이지</title>
 
-   <link href="./css/common.css" rel="stylesheet" type="text/css">
-   <link href="./css/index.css" rel="stylesheet" type="text/css">
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/function.js"></script>
 
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link href="./css/common.css" rel="stylesheet" type="text/css">
+  <link href="./css/index.css" rel="stylesheet" type="text/css">
 
-   <link rel="stylesheet" type="text/css" href="./Semantic/semantic.min.css">
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-   <script src="./Semantic/semantic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./Semantic/semantic.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="./Semantic/semantic.js"></script>
 
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
-   <div class="wrap">
-      <div class="page-header prev-wrap">
-         <a href="http://haaing.com/sample/tirecheck_sample/main/">
-            <p><i class="arrow left icon"></i>돌아가기</p>
-         </a>
+  <div class="wrap">
+    <header class="main-header">
+      <h1 class="main-logo">
+        <a href="#">
+          <img src="./img/tirecheck-logo.svg" alt="메인 로고">
+        </a>
+      </h1>
+      <div class="main-menu">
+        <div class="top_menu login-box">
+          <a href="http://haaing.com/sample/tirecheck_sample/login/">로그인</a>
+        </div>
+        <div class="top_menu my-tire">
+          <a href="#">MY타이어</a>
+        </div>
+        <div class="top_menu heart-tire">
+          <a href="#">찜한타이어</a>
+        </div>
       </div>
-      <div class="out_box-wrap">
-         <div class="out_box out_box_1">
-         <!-- 로그인 텍스트 영역 -->
-            <div class="box1-text-wrap">
-               <p class="box1-text box1-text_1">
-                  <img src="./img/tirecheck-logo.svg" alt="">
-                  공식 예약 서비스
-               </p>
-               <p class="box1-text box1-text_3">회원가입 없이, 30초만에 간편 예약 가능합니다.</p>
+    </header>
+    <main class="main-section">
+      <section class="out_box out_box_1">
+        <div class="swiper bannerSwiper">
+          <div class="swiper-wrapper">
+            <div class="banner-box swiper-slide slide_1">
+              <img src="./img/main-img.png" alt="배너 이미지" id="bannerImg">
+              <div class="banner-text-wrap">
+                <p class="banner-text b_small-text">
+                  대한민국 모두가 선호하는
+                  <img src="./img/outline-logo.png" alt="" id="bannertextimg-1">
+                </p>
+                <p class="banner-text b_big-text">
+                  정직하고 투명한
+                  <br>중고 타이어 중개 플랫폼입니다.
+                </p>
+              </div>
             </div>
-         </div>
-         <div class="out_box out_box_2">
-         <!-- 로그인 방법 영역 -->
-            <div class="login-box l-box_1">
-               <div class="login-con-wrap">
-                  <div class="icon-box icon-1">
-                     <img src="./img/icon-kakao.png" alt="kakao_icon">
-                  </div>
-                  <p>카카오톡 1초 로그인</p>
-               </div>
+            <div class="banner-box swiper-slide slide_2">
+              <img src="./img/main-img-2.png" alt="배너 이미지" id="bannerImg-2">
+              <div class="banner-text-wrap">
+                <p class="banner-text b_small-text">
+                  정밀 검수 모두 완료!
+                </p>
+                <p class="banner-text b_big-text">
+                  믿고 사는 중고 타이어.
+                </p>
+                <button class="banner-but">
+                  <a href="http://haaing.com/sample/tirecheck_sample/select-tire/">지금 검색하기</a>
+                </button>
+              </div>
             </div>
-            <div class="login-box l-box_2">
-               <div class="login-con-wrap">
-                  <div class="icon-box icon-2">
-                     <img src="./img/icon-mail.png" alt="e-mail_icon">
-                  </div>
-                  <p>이메일 로그인</p>
-               </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="today-box">
+        금일 조회수: <b>9999</b>회 | 총 조회수 <b>123456</b>회
+      </section>
+      <section class="out_box out_box_2">
+        <div class="box2-con-wrap top_con">
+          <h2 class="con-title">
+            <span class="small-title">나에게 맞는</span>
+            <br>무료 장착 가능한 타이어 찾기</h2>
+          <div class="search-wrap">
+            <div class="search-con search-select_box">
+              <select name="brand">
+                <option value="">브랜드</option>
+                <option value="hyundai">현대</option>
+                <option value="kia">기아</option>
+                <option value="gm">한국GM</option>
+              </select>
+              <select name="model">
+                <option value="">모델</option>
+                <option>아반떼</option>
+                <option>쏘나타</option>
+                <option>K5</option>
+              </select>
+              <select name="area">
+                <option value="">지역</option>
+                <option>서울</option>
+                <option>부산</option>
+                <option>대구</option>
+              </select>
             </div>
-            <div class="login-box l-box_3">
-               <div class="login-con-wrap">
-                  <div class="icon-box icon-3">
-                     <img src="./img/icon-user.png" alt="user_icon">
-                  </div>
-                  <p>간편 예약하기(비회원 가능)</p>
-               </div>
+            <div class="search-con search-but_box">
+              <div class="search-icon">
+                <img src="./img/search-tire-icon.png" alt="검색 아이콘">
+              </div>
+              <button class="search_but">
+                <a href="http://haaing.com/sample/tirecheck_sample/select-tire/">
+                  결과<br>확인
+                </a>
+              </button>
             </div>
-         </div>
-      </div>
-      <div class="out_box out_box_3">
-         <!-- Footer 영역 -->
-         <div class="footer-con left-foot">
-            <div class="foot-logo-box">
-               <img src="./img/tirecheck-logo.svg" alt="">
+          </div>
+        </div>
+        
+      </section>
+      <section class="out_box out_box_3">
+        <h2 class="con-title" id="box3Title">추천 매장 보기</h2>
+        <div class="move_box">
+          <div class="box3_page page_1">
+            <div class="box3_con_wrap box3_c_wrap_1">
+              <div class="box3_con_box">
+                <div class="box3_img">
+                  <img src="./img/store_1.jpg" alt="">
+                </div>
+                <div class="box3_text_wrap">
+                  <p class="box3_text left_text">
+                    타이어프로 서면점
+                  </p>
+                  <p class="box3_text right_text">
+                    <i class="heart icon"></i>12
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="copy-box">
-               COPYRIGHT @2025 Tirecheck All rights reserved.
+            <div class="box3_con_wrap box3_c_wrap_2">
+              <div class="box3_con_box">
+                <div class="box3_img">
+                  <img src="./img/store_1.jpg" alt="">
+                </div>
+                <div class="box3_text_wrap">
+                  <p class="box3_text left_text">
+                    티스테이션 부산송정점
+                  </p>
+                  <p class="box3_text right_text">
+                    <i class="heart icon"></i>12
+                  </p>
+                </div>
+              </div>
             </div>
-         </div>
-         <div class="footer-con right-foot">
-            <p>이용약관&nbsp;</p>
-            <p>| <b>개인정보 처리방침</b></p>
-         </div>  
-      </div>
+            <div class="box3_con_wrap box3_c_wrap_3">
+              <div class="box3_con_box">
+                <div class="box3_img">
+                  <img src="./img/store_1.jpg" alt="">
+                </div>
+                <div class="box3_text_wrap">
+                  <p class="box3_text left_text">
+                    XX구 OO점
+                  </p>
+                  <p class="box3_text right_text">
+                    <i class="heart icon"></i>12
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box3_page page_2">
+            <div class="box3_con_wrap box3_c_wrap_4">
+              <div class="box3_con_box">
+                <div class="box3_img">
+                  <img src="./img/store_1.jpg" alt="">
+                </div>
+                <div class="box3_text_wrap">
+                  <p class="box3_text left_text">
+                    XX구 OO점
+                  </p>
+                  <p class="box3_text right_text">
+                    <i class="heart icon"></i>12
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box3_con_wrap box3_c_wrap_5">
+              <div class="box3_con_box">
+                <div class="box3_img">
+                  <img src="./img/store_1.jpg" alt="">
+                </div>
+                <div class="box3_text_wrap">
+                  <p class="box3_text left_text">
+                    XX구 OO점
+                  </p>
+                  <p class="box3_text right_text">
+                    <i class="heart icon"></i>12
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box3_con_wrap box3_c_wrap_6">
+              <div class="box3_con_box">
+                <div class="box3_img">
+                  <img src="./img/store_1.jpg" alt="">
+                </div>
+                <div class="box3_text_wrap">
+                  <p class="box3_text left_text">
+                    XX구 OO점
+                  </p>
+                  <p class="box3_text right_text">
+                    <i class="heart icon"></i>12
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box3_but box3_left_but" onclick="slide(-0.5)">
+          <img src="./img/icon-left-but.png" alt="" id="box3_left">
+        </div>
+        <div class="box3_but box3_right_but" onclick="slide(0.5)">
+          <img src="./img/icon-right-but.png" alt="" id="box3_right">
+        </div>
+      </section>
+      <section class="out_box out_box_4">
+        <div class="partner_wrap partner_top_wrap">
+          <div class="partner_text_wrap">
+            <div class="partner_text text-1">
+              <img src="./img/tirecheck-logo.svg" alt="">와 함께
+            </div>
+            <div class="partner_text text-2">
+              고객의 타이어 안전을 지키는
+            </div>
+          </div>
+        </div>
+        <div class="partner_wrap partner_bot_wrap">
+          <div class="partner_con con-1">파트너스</div>
+          <div class="partner_con con-2">
+            바로가기
+            <i class="arrow right icon"></i>
+          </div>
+        </div>
+      </section>
+      <section class="out_box out_box_5">
+        <h2 class="con-title" id="box5-Title">
+          매장 방문 전,<br>
+          <p class="box5-bigtitle">스스로 타이어를 점검해 보세요.</p>
+        </h2>
+        <div class="box5-con-wrap">
+          <div class="box5-con box5-left">
+            <img src="./img/tire-check-img-1.png" alt="" id="box5img1">
+            <p class="box5-text">타이어 자가진단</p>
+          </div>
+          <div class="box5-con box5-right">
+            <img src="./img/tire-check-img-2.png" alt="" id="box5img2">
+            <p class="box5-text">거리별 교체 주기</p>
+          </div>
+        </div>
+      </section>
+      <footer class="main-footer">
+        <div class="footer-text">
+          <img src="./img/tirecheck-logo.svg" alt="footer-logo">
+          <p>COPYRIGHT @2025 Tirecheck All right reserved</p>
+          <p href="#" id="rule"> 이용 약관 &nbsp;| 개인정보처리방침</p>
+        </div>
+      </footer>
       <div class="main-tabmenu">
-         <div class="tab-but tab_1" data-tab="1">
-            <a href="http://haaing.com/sample/tirecheck_sample/main/">홈</a>
-         </div>
-         <div class="tab-but tab_2 active" data-tab="2">예약</div>
-         <div class="tab-but tab_3" data-tab="3">메뉴</div>
+        <div class="tab-but tab_1 active" data-tab="1">
+          <a href="http://haaing.com/sample/tirecheck_sample/main/">홈</a></div>
+        <div class="tab-but tab_2" data-tab="2">예약</div>
+        <div class="tab-but tab_3" data-tab="3">메뉴</div>
       </div>
-   </div>
+    </main>
+  </div>
+  <script>
+    let swiper = new Swiper('.bannerSwiper',{
+      loop: true,
+      pagination:{
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+        clickable: true,
+      },
+    });
+  </script>
+  <script>
+    let a = 0;
+    const box = document.querySelector('.move_box');
+    const left = document.querySelector('#box3_left');
+    const right = document.querySelector('#box3_right');
+    const totalSlides = document.querySelectorAll('.box3_page').length;
+
+    function slide(e){
+      a = Math.max(0, Math.min(totalSlides - 1, a + e));
+      box.style.left = `-${a * 100}%`;
+      left.style.display = a === 0 ? 'none' : 'block';
+      right.style.display = a === totalSlides - 1 ? 'none' : 'block';
+    }
+
+    window.onload = ()=> slide(0);
+  </script>
 </body>
 </html>
